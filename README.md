@@ -2,8 +2,13 @@
 
 Input
 -----
-![](img/1.png)
-![](img/3.png)
+<p align="center">
+  <img width="400" src="img/1.png">
+</p>
+
+<p align="center">
+  <img width="400" src="img/3.png">
+</p>
 
     N node : 5
     Distance from node 0 to node 0: 0
@@ -44,4 +49,6 @@ Output
     Node 2 and node 3 are connected through nodes =  [2, 3] , total distance = 6
     Node 2 and node 4 are connected through nodes =  [2, 3, 4] , total distance = 10
     Node 3 and node 4 are connected through nodes =  [3, 4] , total distance = 4
-![](img/2.png =100x)
+<p align="center">
+  <img width="400" src="img/2.png">
+</p>
