@@ -2,7 +2,7 @@
 
 Input
 -----
-![](img/1.png)
+![](img/1.png |width=10)
 ![](img/3.png)
 
     N node : 5
@@ -44,4 +44,4 @@ Output
     Node 2 and node 3 are connected through nodes =  [2, 3] , total distance = 6
     Node 2 and node 4 are connected through nodes =  [2, 3, 4] , total distance = 10
     Node 3 and node 4 are connected through nodes =  [3, 4] , total distance = 4
-![](img/1.png)
+![](img/2.png =100x)
