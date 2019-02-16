@@ -2,7 +2,7 @@
 
 Input
 -----
-![](img/1.png |width=10)
+![](img/1.png)
 ![](img/3.png)
 
     N node : 5
