@@ -7,7 +7,7 @@ def floyd(graph, node, nextt):
                 if graph[i][j] > (graph[i][k] + graph[k][j]):
                     graph[i][j] = graph[i][k] + graph[k][j]
                     nextt[i][j] = nextt[i][k]
-        print("\nIteration", k+1,"\n",graph)
+        #print("\nIteration", k+1,"\n",graph)
     return graph
 
 def path(nextt, source, destination):
@@ -15,7 +15,6 @@ def path(nextt, source, destination):
    while source != destination:
        source = nextt[source][destination]
        path.append(source)
-       print(path)
    return path
 
 def main():
@@ -26,11 +25,11 @@ def main():
     
     for i in range(node):
         for j in range(node):
-            c = input("Jarak dari node %d menuju node %d: " %(i,j))
+            c = input("Distance from node %d to node %d: " %(i,j))
             if i == j:
                 c = 0
             if c == "-":
-                c = 9999 #for unconnectable nodes
+                c = 9999 #input '-' for unconnectable nodes
             else:
                 c = int(c)
             dist_list[i][j] = c
@@ -42,9 +41,9 @@ def main():
     print("\n")
     
     for i in range(node):
-            for j in range(node):
-                if i < j:
-                    print ("Node",i,"and node",j,"are connected through nodes = ",
+        for j in range(node):
+            if i < j:
+                print ("Node",i,"and node",j,"are connected through nodes = ",
                            path(nextt, i, j),", total distance =", new_dist[i][j])
     
 main()
